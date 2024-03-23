@@ -1,20 +1,20 @@
-import React from 'react';
-import AppNavigator from './AppNavigator';
-import { NativeBaseProvider } from 'native-base';
-import { extendTheme } from 'native-base';
+import React from "react";
+import AppNavigator from "./AppNavigator";
+import { NativeBaseProvider } from "native-base";
+import { extendTheme } from "native-base";
 
 const theme = extendTheme({
   colors: {
     primary: {
-      500: '#D0D4FC',
-      600: '#4255FF',
+      500: "#D0D4FC",
+      600: "#4255FF",
     },
     muted: {
-      800: '#4255FF',
+      800: "#4255FF",
     },
     secondary: {
-      200: '#DAF9FD'
-    }
+      200: "#DAF9FD",
+    },
   },
 });
 export default function App() {
@@ -22,7 +22,5 @@ export default function App() {
     <NativeBaseProvider theme={theme}>
       <AppNavigator />
     </NativeBaseProvider>
-  )
-
-
+  );
 }
